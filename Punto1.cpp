@@ -54,16 +54,16 @@ main()
             pushorden(lista, nodo);
             break;
         case 4:
-            cout<<"Nodo eliminado: "<<popinicio(lista);
+            cout<<"Nodo eliminado: "<<popinicio(lista)->dato;
             break;
         case 5:
-            cout<<"Nodo eliminado: "<<popfinal(lista);
+            cout<<"Nodo eliminado: "<<popfinal(lista)->dato;
             break;
         case 6:
             int elim;
             cout<<"Ingrese Nodo a eliminar: ";
             cin>>elim;
-            cout<<"Nodo eliminado: "<<popnodo(lista, elim);
+            cout<<"Nodo eliminado: "<<popnodo(lista, elim)->dato;
             break;
         case 7:
             mostrar(lista);
