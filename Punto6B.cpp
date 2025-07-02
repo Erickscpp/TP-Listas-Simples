@@ -41,8 +41,8 @@ public:
             i=i->siguiente;
         }
 
-        cout<<"Cantidad de mayúsculas: "<<may<<endl;
-        cout<<"Cantidad de minúsculas: "<<minu<<endl;
+        cout<<"Cantidad de mayusculas: "<<may<<endl;
+        cout<<"Cantidad de minusculas: "<<minu<<endl;
     }
 };
 
