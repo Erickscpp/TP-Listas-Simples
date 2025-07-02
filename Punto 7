@@ -1,0 +1,54 @@
+PUNTO 7
+
+A_
+void enigma(Nodo* nodo)
+{
+if(nodo!=nullptr)
+if(nodo->getSiguiente() == nullptr)
+cout << nodo->getDato() << endl;
+else{
+enigma(nodo->getSiguiente());
+cout << nodo->getDato() << endl;
+}
+}
+
+Acciones:
+Si el nodo no esta vacio, pregunta si el nodo es el ultimo antes de NULL, si es asi devuelve el dato del nodo,
+sino llama a la funcion recursivamente y le pasa el nodo siguiente, asi hasta llegar al ultimo; Una vez q llega al ultimo
+empieza a devolver los datos de cada nodo, desde el ultimo al primero.
+
+Proposito:
+Imprime los elementos en orden inverso, es decir desde el ultimo elemento hasta el primero
+
+B_
+int misterio (Nodo* nodo)
+{
+if(nodo == nullptr)
+return 0;
+else
+return misterio(nodo->getSiguiente()) + 1;
+}
+
+Acciones:
+pregunta si el nodo esta en NULL, si es asi devuelve 0, sino llama a la funcion recursivamente hasta llegar al ultimo elemento.
+cuando llega al ultimo elemento devuelve 0 y va sumando 1 hasta llegar al primer elemento.
+
+Proposito:
+Devuelve la cantidad de elementos totales
+
+C_
+Nodo* desconocido(Nodo* nodo)
+{
+if(nodo == nullptr || nodo ->getSiguiente() ==
+nullptr)
+return nodo;
+else
+return desconocido(nodo->getSiguiente());
+}
+
+Acciones:
+progunta si el nodo esta vacio o es el ultimo antes de null.
+Si es asi devuelve la direccio, sino llama a la funcion de forma recursiva y le pasa el nodo siguiente; Asi hasta llegar al ultimo nodo.
+
+Proposito:
+Devuelve la direccion del ultimo elemento
